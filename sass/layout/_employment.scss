@@ -1,0 +1,33 @@
+.employment__container {
+    padding-top: 47px;
+}
+
+.employment__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.employment__thumb {
+    position: relative;
+}
+
+.employment__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color-alpha);
+}
+
+.employment__text {
+    margin-top: 27px;
+    margin-bottom: 27px;
+    color: var(--add-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

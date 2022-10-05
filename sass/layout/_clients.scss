@@ -1,0 +1,32 @@
+.clients__container {
+    gap: 50px;
+}
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    padding: 15px 31px;
+    transition: var(--animation);
+    &:hover,
+    &:focus {
+        border-color: var(--brand-color);
+        & .clients__svg {
+            fill: var(--brand-color);
+        }
+    }
+}
+
+.clients__svg {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color);
+    transition: var(--animation);
+}
