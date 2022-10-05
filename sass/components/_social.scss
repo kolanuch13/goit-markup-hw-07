@@ -1,11 +1,11 @@
-.social {
+.social__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.social__link {
+.social__list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,13 +20,13 @@
     
 }
 
-.social__svg {
+.social__list-svg {
     width: 20px;
     height: 20px;
     fill: var(--icon-color);
     transition: var(--animation); 
-        .social__link:hover &,
-        .social__link:focus & {
+        .social__list-link:hover &,
+        .social__list-link:focus & {
             fill: var(--add-color);
         }
 }

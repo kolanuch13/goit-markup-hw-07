@@ -7,11 +7,11 @@
     gap: 30px;
 }
 
-.features__item {
+.features__list-item {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.features__wrapper {
+.features__list-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,13 +20,13 @@
     background-color: var(--specific-color);
 }
 
-.features__svg {
+.features__list-svg {
     width: 70px;
     height: 70px;
     margin: 25px 100px;
 }
 
-.features__title {
+.features__list-title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -36,7 +36,7 @@
     text-transform: uppercase;
 }
 
-.features__descript {
+.features__list-descript {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

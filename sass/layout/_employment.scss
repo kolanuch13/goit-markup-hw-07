@@ -1,4 +1,4 @@
-.employment__container {
+.employment__list-container {
     padding-top: 47px;
 }
 
@@ -8,11 +8,11 @@
     margin-bottom: 0;
 }
 
-.employment__thumb {
+.employment__list-thumb {
     position: relative;
 }
 
-.employment__overlay {
+.employment__list-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -20,7 +20,7 @@
     background-color: var(--background-color-alpha);
 }
 
-.employment__text {
+.employment__list-text {
     margin-top: 27px;
     margin-bottom: 27px;
     color: var(--add-color);

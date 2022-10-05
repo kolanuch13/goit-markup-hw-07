@@ -28,7 +28,7 @@
     margin-top: 20px;
 }
 
-.address__location {
+.address__list-location {
     display: block;
     width: 231px;
     font-size: 14px;
@@ -52,7 +52,7 @@
     }
 }
 
-.address__contact{
+.address__list-contact{
     color: var(--footer-text);
     transition: var(--animation);
     &:visited {

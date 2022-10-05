@@ -134,14 +134,14 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.social {
+.social__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.social__link {
+.social__list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,17 +150,17 @@ ul {
   background-color: var(--footer-icons);
   transition: var(--animation);
 }
-.social__link:hover, .social__link:focus {
+.social__list-link:hover, .social__list-link:focus {
   background-color: var(--brand-color);
 }
 
-.social__svg {
+.social__list-svg {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
   transition: var(--animation);
 }
-.social__link:hover .social__svg, .social__link:focus .social__svg {
+.social__list-link:hover .social__list-svg, .social__list-link:focus .social__list-svg {
   fill: var(--add-color);
 }
 
@@ -207,27 +207,27 @@ ul {
   column-gap: 50px;
 }
 
-.nav__item {
+.nav__list-item {
   position: relative;
 }
 
-.nav__link {
+.nav__list-link {
   color: var(--main-color);
   transition: var(--animation);
 }
-.nav__link:visited {
+.nav__list-link:visited {
   color: var(--main-color);
   transition: var(--animation);
 }
-.nav__link:hover, .nav__link:focus {
+.nav__list-link:hover, .nav__list-link:focus {
   color: var(--brand-color);
   position: relative;
 }
-.nav__link--current, .nav__link--current:visited {
+.nav__list-link--current, .nav__list-link--current:visited {
   color: var(--brand-color);
   position: relative;
 }
-.nav__link--current::after, .nav__link--current:visited::after {
+.nav__list-link--current::after, .nav__list-link--current:visited::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -238,29 +238,29 @@ ul {
   border-radius: 2px;
 }
 
-.contact__link,
-.contact__link:visited {
+.contact__list-link,
+.contact__list-link:visited {
   display: flex;
   gap: 10px;
   color: var(--back-color);
   transition: var(--animation);
 }
-.contact__link:hover, .contact__link:focus,
-.contact__link:visited:hover,
-.contact__link:visited:focus {
+.contact__list-link:hover, .contact__list-link:focus,
+.contact__list-link:visited:hover,
+.contact__list-link:visited:focus {
   color: var(--brand-color);
 }
-.contact__link .contact__svg,
-.contact__link:visited .contact__svg {
+.contact__list-link .contact__list-svg,
+.contact__list-link:visited .contact__list-svg {
   transition: var(--animation);
 }
-.contact__link:hover .contact__svg, .contact__link:focus .contact__svg,
-.contact__link:visited:hover .contact__svg,
-.contact__link:visited:focus .contact__svg {
+.contact__list-link:hover .contact__list-svg, .contact__list-link:focus .contact__list-svg,
+.contact__list-link:visited:hover .contact__list-svg,
+.contact__list-link:visited:focus .contact__list-svg {
   fill: var(--brand-color);
 }
 
-.contact__svg {
+.contact__list-svg {
   width: 16px;
   height: 16px;
   fill: var(--back-color);
@@ -304,11 +304,11 @@ ul {
   gap: 30px;
 }
 
-.features__item {
+.features__list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.features__wrapper {
+.features__list-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,13 +316,13 @@ ul {
   background-color: var(--specific-color);
 }
 
-.features__svg {
+.features__list-svg {
   width: 70px;
   height: 70px;
   margin: 25px 100px;
 }
 
-.features__title {
+.features__list-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -331,14 +331,14 @@ ul {
   text-transform: uppercase;
 }
 
-.features__descript {
+.features__list-descript {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--back-color);
 }
 
-.employment__container {
+.employment__list-container {
   padding-top: 47px;
 }
 
@@ -348,11 +348,11 @@ ul {
   margin-bottom: 0;
 }
 
-.employment__thumb {
+.employment__list-thumb {
   position: relative;
 }
 
-.employment__overlay {
+.employment__list-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -360,7 +360,7 @@ ul {
   background-color: var(--background-color-alpha);
 }
 
-.employment__text {
+.employment__list-text {
   margin-top: 27px;
   margin-bottom: 27px;
   color: var(--add-color);
@@ -382,7 +382,7 @@ ul {
   gap: 30px;
 }
 
-.team__item {
+.team__list-item {
   display: flex;
   flex-direction: column;
   background-color: var(--add-color);
@@ -424,7 +424,7 @@ ul {
   gap: 30px;
 }
 
-.clients__link {
+.clients__list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,14 +433,14 @@ ul {
   padding: 15px 31px;
   transition: var(--animation);
 }
-.clients__link:hover, .clients__link:focus {
+.clients__list-link:hover, .clients__list-link:focus {
   border-color: var(--brand-color);
 }
-.clients__link:hover .clients__svg, .clients__link:focus .clients__svg {
+.clients__list-link:hover .clients__list-svg, .clients__list-link:focus .clients__list-svg {
   fill: var(--brand-color);
 }
 
-.clients__svg {
+.clients__list-svg {
   width: 106px;
   height: 60px;
   fill: var(--icon-color);
@@ -477,7 +477,7 @@ ul {
   margin-top: 20px;
 }
 
-.address__location {
+.address__list-location {
   display: block;
   width: 231px;
   font-size: 14px;
@@ -486,7 +486,7 @@ ul {
   color: var(--add-color);
   transition: var(--animation);
 }
-.address__location:visited {
+.address__list-location:visited {
   display: block;
   width: 231px;
   font-size: 14px;
@@ -495,19 +495,19 @@ ul {
   color: var(--add-color);
   transition: var(--animation);
 }
-.address__location:hover, .address__location:focus, .address__location:active {
+.address__list-location:hover, .address__list-location:focus, .address__list-location:active {
   color: var(--brand-color);
 }
 
-.address__contact {
+.address__list-contact {
   color: var(--footer-text);
   transition: var(--animation);
 }
-.address__contact:visited {
+.address__list-contact:visited {
   color: var(--footer-text);
   transition: var(--animation);
 }
-.address__contact:hover, .address__contact:focus, .address__contact:active {
+.address__list-contact:hover, .address__list-contact:focus, .address__list-contact:active {
   color: var(--brand-color);
 }
 
