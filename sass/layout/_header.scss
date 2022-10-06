@@ -4,17 +4,70 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    &__container {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
 }
 
-.header__container {
+.nav {
     display: flex;
-    align-items: center;
     align-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    align-items: center;
+    column-gap: 90px;
+    margin-right: auto;
+    margin-left: 93px;
+    &__list {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            column-gap: 50px;
+    
+            &-item {
+                position: relative;
+            }
+    
+            &-link {
+                color: var(--main-color);
+                transition: var(--animation);
+    
+                &:visited {
+                    color: var(--main-color);
+                    transition: var(--animation);
+                }
+    
+                &:hover,
+                &:focus {
+                    color: var(--brand-color);
+                    position: relative;
+                }
+    
+                &--current,
+                &--current:visited {
+                    color: var(--brand-color);
+                    position: relative;
+    
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 4px;
+                        left: 0;
+                        right: 0;
+                        bottom: -33px;
+    
+                        background: var(--brand-color);
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
 }
 
-.nav,
+
+
 .contact {
     display: flex;
     align-content: center;
@@ -22,81 +75,39 @@
     column-gap: 90px;
     margin-right: auto;
     margin-left: 93px;
-}
-
-.nav__list {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    column-gap: 50px;
-    &-item {
-        position: relative;
-    }
-    &-link {
-        color: var(--main-color);
-        transition: var(--animation);
+    &__list {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            column-gap: 50px;
     
-        &:visited {
-            color: var(--main-color);
-            transition: var(--animation);
-        }
+            &-link,
+            &-link:visited {
+                display: flex;
     
-        &:hover,
-        &:focus {
-            color: var(--brand-color);
-            position: relative;
-        }
+                gap: 10px;
+                color: var(--back-color);
+                transition: var(--animation);
     
-        &--current,
-        &--current:visited {
-            color: var(--brand-color);
-            position: relative;
+                &:hover,
+                &:focus {
+                    color: var(--brand-color);
+                }
     
-            &::after {
-                position: absolute;
-                content: "";
-                height: 4px;
-                left: 0;
-                right: 0;
-                bottom: -33px;
+                & .contact__list-svg {
+                    transition: var(--animation);
+                }
     
-                background: var(--brand-color);
-                border-radius: 2px;
+                &:hover .contact__list-svg,
+                &:focus .contact__list-svg {
+                    fill: var(--brand-color);
+                }
+            }
+    
+            &-svg {
+                width: 16px;
+                height: 16px;
+                fill: var(--back-color);
             }
         }
-    }
-}
-
-.contact__list {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    column-gap: 50px;
-    &-link,
-    &-link:visited {
-        display: flex;
-
-        gap: 10px;
-        color: var(--back-color);
-        transition: var(--animation);
-
-        &:hover,
-        &:focus {
-            color: var(--brand-color);
-        }
-
-        & .contact__list-svg {
-            transition: var(--animation);
-        }
-
-        &:hover .contact__list-svg,
-        &:focus .contact__list-svg {
-            fill: var(--brand-color);
-        }
-    }
-    &-svg {
-        width: 16px;
-        height: 16px;
-        fill: var(--back-color);
-    }
 }

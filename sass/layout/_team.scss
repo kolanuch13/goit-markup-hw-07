@@ -1,20 +1,20 @@
 .team {
     background-color: var(--specific-color);
-}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 90px) / 4);
+        gap: 30px;
 
-.team__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
-    &-item {
+        &-item {
             display: flex;
             flex-direction: column;
-    
+
             background-color: var(--add-color);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
         }
+    }
 }
 
 .card {
@@ -24,21 +24,20 @@
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 10px;
-}
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    
+    &__position {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
 
-.card__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.card__position {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--back-color);
+        color: var(--back-color);
+    }
 }
