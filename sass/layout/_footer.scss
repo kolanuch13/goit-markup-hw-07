@@ -26,17 +26,7 @@
     justify-content: space-between;
     gap: 9px;
     margin-top: 20px;
-}
-
-.address__list-location {
-    display: block;
-    width: 231px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--add-color);
-    transition: var(--animation);
-    &:visited {
+    &-location {
         display: block;
         width: 231px;
         font-size: 14px;
@@ -44,25 +34,37 @@
         letter-spacing: 0.03em;
         color: var(--add-color);
         transition: var(--animation);
-    }
-    &:hover,
-    &:focus,
-    &:active {
-        color: var(--brand-color);
-    }
-}
 
-.address__list-contact{
-    color: var(--footer-text);
-    transition: var(--animation);
-    &:visited {
+        &:visited {
+            display: block;
+            width: 231px;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--add-color);
+            transition: var(--animation);
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--brand-color);
+        }
+    }
+    &-contact {
         color: var(--footer-text);
         transition: var(--animation);
-    }
-    &:hover,
-    &:focus,
-    &:active {
-        color: var(--brand-color);
+    
+        &:visited {
+            color: var(--footer-text);
+            transition: var(--animation);
+        }
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--brand-color);
+        }
     }
 }
 

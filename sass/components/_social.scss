@@ -3,30 +3,31 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.social__list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    border-radius: 50%;
-    background-color: var(--footer-icons);
-    transition: var(--animation);
-    &:hover,
-    &:focus {
-        background-color: var(--brand-color);
-    }
     
-}
+    &-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: var(--footer-icons);
+        transition: var(--animation);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--brand-color);
+        }
+    }
 
-.social__list-svg {
-    width: 20px;
-    height: 20px;
-    fill: var(--icon-color);
-    transition: var(--animation); 
+    &-svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--icon-color);
+        transition: var(--animation);
+    
         .social__list-link:hover &,
         .social__list-link:focus & {
             fill: var(--add-color);
         }
+    }
 }

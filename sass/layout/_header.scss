@@ -24,71 +24,79 @@
     margin-left: 93px;
 }
 
-.nav__list,
+.nav__list {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    column-gap: 50px;
+    &-item {
+        position: relative;
+    }
+    &-link {
+        color: var(--main-color);
+        transition: var(--animation);
+    
+        &:visited {
+            color: var(--main-color);
+            transition: var(--animation);
+        }
+    
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+            position: relative;
+        }
+    
+        &--current,
+        &--current:visited {
+            color: var(--brand-color);
+            position: relative;
+    
+            &::after {
+                position: absolute;
+                content: "";
+                height: 4px;
+                left: 0;
+                right: 0;
+                bottom: -33px;
+    
+                background: var(--brand-color);
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
 .contact__list {
     display: flex;
     align-content: center;
     align-items: center;
     column-gap: 50px;
-}
+    &-link,
+    &-link:visited {
+        display: flex;
 
-.nav__list-item {
-    position: relative;
-}
+        gap: 10px;
+        color: var(--back-color);
+        transition: var(--animation);
 
-.nav__list-link {
-    color: var(--main-color);
-    transition: var(--animation);
-    &:visited {
-        color: var(--main-color);
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+
+        & .contact__list-svg {
             transition: var(--animation);
-    }
-    &:hover,
-    &:focus {
-        color: var(--brand-color);
-        position: relative;
-    }
-    &--current,
-    &--current:visited {
-        color: var(--brand-color);
-        position: relative;
-    
-        &::after {
-            position: absolute;
-            content: "";
-            height: 4px;
-            left: 0;
-            right: 0;
-            bottom: -33px;
-    
-            background: var(--brand-color);
-            border-radius: 2px;
+        }
+
+        &:hover .contact__list-svg,
+        &:focus .contact__list-svg {
+            fill: var(--brand-color);
         }
     }
-}
-
-.contact__list-link,
-.contact__list-link:visited {
-    display: flex;
-
-    gap: 10px;
-    color: var(--back-color);
-    transition: var(--animation);
-    &:hover,
-    &:focus {
-        color: var(--brand-color);
+    &-svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--back-color);
     }
-    & .contact__list-svg {
-        transition: var(--animation);
-    }
-    &:hover .contact__list-svg,
-    &:focus .contact__list-svg {
-        fill: var(--brand-color);
-    }
-}
-
-.contact__list-svg {
-    width: 16px;
-    height: 16px;
-    fill: var(--back-color);
 }
